@@ -12,7 +12,7 @@ export default function CustomerForm(){
 
 
     const dispatch = useDispatch();
-    const customers = useSelector((state) => state.customers);
+    const customers = useSelector((state) => state.customer.customers || []);
 
     const handheldSubmit =()=>{
         const newCustomer = {

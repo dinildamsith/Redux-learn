@@ -1,7 +1,13 @@
-import { createStore } from 'redux';
+import { combineReducers, createStore } from 'redux';
 import customerReducer from "../components/customer/customerReducer.js";
+import Reducer from "../components/testing/reducer.js";
 
 
-const store = createStore(customerReducer);
+const rootReducer = combineReducers({
+    customer: customerReducer,
+    reducer: Reducer
+});
+
+const store = createStore(rootReducer);
 
 export default store;
