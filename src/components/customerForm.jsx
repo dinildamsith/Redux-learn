@@ -1,6 +1,6 @@
 import {useDispatch, useSelector} from "react-redux";
 import {useState} from "react";
-import {addCustomer} from "./actionCreator.js";
+import {addCustomer} from "./customerActionsCreator.js";
 
 export default function CustomerForm(){
 
