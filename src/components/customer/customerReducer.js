@@ -6,8 +6,8 @@ function customerReducer(state = initialState, action) {
             return {
                 ...state,
                 customers: [...state.customers, action.payload]
-            };
 
+            };
 
         default:
             return state;

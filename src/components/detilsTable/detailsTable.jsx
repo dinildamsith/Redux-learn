@@ -1,5 +1,6 @@
 export default function DetailsTable(){
 
+
     return(
         <>
             <div className="min-h-screen flex items-center justify-center bg-gray-100">
@@ -34,6 +35,7 @@ export default function DetailsTable(){
 
                     <div className="mt-6 flex justify-end space-x-4">
                         <button
+
                             className="py-2 px-4 bg-indigo-600 text-white font-semibold rounded-md hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50">
                             Get Data
                         </button>
