@@ -2,6 +2,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {useState} from "react";
 import {addCustomer} from "./customerActionsCreator.js";
 
+
 export default function CustomerForm(){
 
     const [customerId, setCustomerId] = useState('');
@@ -24,6 +25,10 @@ export default function CustomerForm(){
         dispatch(addCustomer(newCustomer))
 
     }
+
+
+
+
 
     return(
         <>
@@ -97,6 +102,20 @@ export default function CustomerForm(){
                                 className="w-full py-2 px-4 bg-indigo-600 text-white font-semibold rounded-md hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50"
                             >
                                 Submit
+                            </button>
+
+                            <button
+                                type="button"
+                                className="w-full py-2 px-4 bg-[yellow] text-black font-semibold rounded-md hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50"
+                            >
+                                Update
+                            </button>
+
+                            <button
+                                type="button"
+                                className="w-full py-2 px-4 bg-[red] text-white font-semibold rounded-md hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50"
+                            >
+                                Delete
                             </button>
                         </div>
                     </form>
